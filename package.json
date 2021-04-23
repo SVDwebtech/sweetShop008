@@ -1,0 +1,24 @@
+{
+  "name": "sweetshop008",
+  "version": "1.0.0",
+  "description": "landing page for sweets and treats",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SVDwebtech/sweetShop008.git"
+  },
+  "author": "Schalk van Dyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SVDwebtech/sweetShop008/issues"
+  },
+  "homepage": "https://github.com/SVDwebtech/sweetShop008#readme",
+  "devDependencies": {
+    "i": "^0.3.6",
+    "npm": "^7.11.0",
+    "sass": "^1.32.11"
+  }
+}
