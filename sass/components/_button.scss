@@ -12,7 +12,7 @@
 	}
 
 	&:hover {
-		transform: translateY(-.3rem);
+		transform: translateY(-.4rem);
 		box-shadow: 0 .8rem 1.4rem rgba($color-black, .3);
 
 		&::after {
@@ -22,7 +22,7 @@
 	}
 
 	&:active {
-		transform: translateY(-.1rem);
+		transform: translateY(-.2rem);
 		box-shadow: 0 .4rem .8rem rgba($color-black, .5);
 	}
 
@@ -32,6 +32,15 @@
 
 		&::after {
 			background-color: $color-white;
+		}
+	}
+
+	&--purple {
+		background-color: $color-primary-bright;
+		color: $color-white;
+
+		&::after {
+			background-color: $color-primary-bright;
 		}
 	}
 
@@ -70,7 +79,7 @@
 		background-color: $color-primary;
 		color: $color-white;
 		box-shadow: 0 1rem 2rem rgba($color-black, .15);
-		transform: translateY(-2px);
+		transform: translateY(-4px);
 	}
 
 	&:active {
