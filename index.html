@@ -14,7 +14,23 @@
 <body>
 
     <div class="navigation">
-        <input type="checkbox" class="navigation_checkbox" name="" id="">
+        <input type="checkbox" class="navigation__checkbox" name="" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Us</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Request Quote</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Discover Sweets & Treats</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Satisfied Customers</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact Us</a></li>
+            </ul>
+        </nav>
     </div>
     
     <header class="header">
@@ -45,7 +61,7 @@
 
             <div class="row">
                 <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Fall in love with our products</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small">About Us</h3>
                     <p class="paragraph">
                         We only use quality ingredients and the final product is measured against the
                         the highest standards. Similique, porro reiciendis nemo unde tempora commodi 
@@ -76,7 +92,7 @@
                 <div class="col-1-of-4">
                     <div class="feature-box">
                         <i class="feature-box__icon icon-basic-magnifier"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Search Products</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Discover our Sweets & Treats</h3>
                         <p class="feature-box__text">
                             Search our product list to find a treat you might like for your 
                             special occasion.
@@ -154,7 +170,7 @@
                                         R10.00
                                     </p>
                                 </div>
-                                <a href="#" class="btn btn--white">Shop now</a>
+                                <a href="#popup" class="btn btn--white">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +206,7 @@
                                         R15.00
                                     </p>
                                 </div>
-                                <a href="#" class="btn btn--white">Shop now</a>
+                                <a href="#popup" class="btn btn--white">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -226,7 +242,7 @@
                                         R18.00
                                     </p>
                                 </div>
-                                <a href="#" class="btn btn--white">Shop now</a>
+                                <a href="#popup" class="btn btn--white">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -390,6 +406,13 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            POPUP
+        </div>
+    </div>
     
     <!-- <section class="grid-test">
         <div class="row">
