@@ -4,7 +4,6 @@ body {
 	/* font-size: 16px; */
 	line-height: 1.7;
 	color: $color-grey-dark;
-	padding: 3rem;
 }
 
 .heading-primary {
@@ -16,13 +15,28 @@ body {
 
 	&--main {
 		display: block;
-		font-size: 5rem;
+		font-size: 4.75rem;
 		font-weight: 400;
-		letter-spacing: 1rem;
+		letter-spacing: .8rem;
 
 		animation-name: moveInLeft;
 		animation-duration: 3s;
 		animation-timing-function: ease-out;
+
+		@include respond(tab-land) {
+			letter-spacing: .6rem;
+			font-size: 4rem;
+		}
+
+		@include respond(tab-port) {
+			letter-spacing: .5rem;
+			font-size: 3rem;
+		}
+
+		@include respond(phone) {
+			letter-spacing: .2rem;
+			font-size: 2.5rem;
+		}
 	}
 
 	&--sub {
@@ -30,8 +44,25 @@ body {
 		font-size: 1.5rem;
 		font-weight: 900;
 		letter-spacing: .5rem;
-
 		animation: moveInRight 3s ease-out;
+
+		@include respond(tab-land) {
+			letter-spacing: .4rem;
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+
+		@include respond(tab-port) {
+			letter-spacing: .3rem;
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+
+		@include respond(phone) {
+			letter-spacing: .2rem;
+			font-size: 1.1rem;
+			font-weight: 400;
+		}
 	}
 }
 
@@ -49,6 +80,14 @@ body {
 	color: transparent;
 	letter-spacing: .2rem;
 	transition: all .2s;
+	@include respond(tab-port) {
+		letter-spacing: .15rem;
+		font-size: 3rem;
+	}
+	@include respond(phone) {
+		letter-spacing: 0rem;
+		font-size: 2rem;
+	}
 	&:hover {
 		transform: skewX(15deg) skewY(.2deg) scale(1.1);
 		text-shadow: .5rem 1rem 2rem rgba($color-black, .5);
