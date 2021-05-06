@@ -880,7 +880,8 @@ S .card__side--front {
 }
 
 .row {
-  max-width: 114rem;
+  max-width: 110rem;
+  padding: 0 5rem;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -894,7 +895,7 @@ S .card__side--front {
 @media (max-width: 56.25em) {
   .row {
     max-width: 50rem;
-    padding: 0 3rem;
+    padding: 0 5rem;
   }
 }
 .row::after {
@@ -1055,6 +1056,7 @@ S .card__side--front {
   margin: 1rem;
 }
 .navigation__link:link, .navigation__link:visited {
+  min-width: 35rem;
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -1069,6 +1071,16 @@ S .card__side--front {
 .navigation__link:link span, .navigation__link:visited span {
   margin-right: 1rem;
   display: inline-block;
+}
+@media (max-width: 56.25em) {
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 1.7rem;
+  }
 }
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -1193,13 +1205,13 @@ S .card__side--front {
 }
 @media (max-width: 75em) {
   .book {
-    background-image: linear-gradient(102deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 65%, transparent 65%), url(../img/book-background-img.jpg);
+    background-image: linear-gradient(102deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 65%, transparent 65%), url(../img/book-background-img-1200.jpg);
     background: cover;
   }
 }
 @media (max-width: 56.25em) {
   .book {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/book-background-img.jpg);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/book-background-img-1200.jpg);
     background-size: cover;
   }
 }

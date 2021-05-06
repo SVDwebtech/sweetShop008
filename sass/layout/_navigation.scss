@@ -72,6 +72,7 @@
 	&__link {
 		&:link,
 		&:visited {
+			min-width: 35rem;
 			display: inline-block;
 			font-size: 3rem;
 			font-weight: 300;
@@ -90,6 +91,12 @@
 			span {
 				margin-right: 1rem;
 				display: inline-block;
+			}
+			@include respond(tab-port) {
+				font-size: 2.3rem;
+			}
+			@include respond(phone) {
+				font-size: 1.7rem;
 			}
 		}
 		&:hover,

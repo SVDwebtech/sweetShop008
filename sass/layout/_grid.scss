@@ -1,5 +1,6 @@
 .row {
 	max-width: $grid-width;
+	padding: 0 5rem;
 	// background-color: #eee;
 	margin: 0 auto;
 	&:not(:last-child) {
@@ -12,7 +13,7 @@
 
 	@include respond(tab-port) {
 		max-width: 50rem;
-		padding: 0 3rem;
+		padding: 0 5rem;
 	}
 
 	@include clearfix;

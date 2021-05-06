@@ -87,7 +87,7 @@
 				rgba($color-white, .7) 65%,
 				transparent 65%
 			),
-			url(../img/book-background-img.jpg);
+			url(../img/book-background-img-1200.jpg);
 		background: cover;
 	}
 	@include respond(tab-port) {
@@ -96,7 +96,7 @@
 				rgba($color-white, .7) 0%,
 				rgba($color-white, .7) 100%
 			),
-			url(../img/book-background-img.jpg);
+			url(../img/book-background-img-1200.jpg);
 		background-size: cover;
 	}
 	@media (min-resolution: 192dpi) and (min-width: 37.5em),
