@@ -384,13 +384,13 @@ S .card__side--front {
   border-top-right-radius: 3px;
 }
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #f121bd, #3d0630), url(../img/card-background-img-1.jpg);
+  background-image: linear-gradient(to right bottom, #f121bd, #3d0630), url(../img/card-background-img-1-690.jpg);
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #c627ee, #7b68ee), url(../img/card-background-img-2.jpg);
+  background-image: linear-gradient(to right bottom, #c627ee, #7b68ee), url(../img/card-background-img-2-690.jpg);
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #f12166, #570a23), url(../img/card-background-img-3.jpg);
+  background-image: linear-gradient(to right bottom, #f12166, #570a23), url(../img/card-background-img-3-690.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -519,8 +519,9 @@ S .card__side--front {
 }
 @media (max-width: 56.25em) {
   .composition__photo--p1 {
-    top: 0;
-    transform: scale(1.2);
+    top: 1rem;
+    left: 1.5rem;
+    transform: scale(1.1);
   }
 }
 .composition__photo--p2 {
@@ -529,7 +530,8 @@ S .card__side--front {
 }
 @media (max-width: 56.25em) {
   .composition__photo--p2 {
-    top: -1rem;
+    top: -2.5rem;
+    right: 2rem;
     transform: scale(1.3);
     z-index: 100;
   }
@@ -540,16 +542,17 @@ S .card__side--front {
 }
 @media (max-width: 56.25em) {
   .composition__photo--p3 {
-    top: 1rem;
-    left: 0;
-    transform: scale(1.1);
+    top: 0rem;
+    left: -5rem;
+    transform: scale(1.3);
+    z-index: 200;
   }
 }
 .composition__photo:hover {
   outline: 1.5rem solid #9370d8;
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 20;
+  z-index: 300;
 }
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
@@ -937,12 +940,17 @@ S .card__side--front {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(198, 39, 238, 0.67), rgba(123, 104, 238, 0.67)), url(../img/header-background-img.jpg);
+  background-image: linear-gradient(to right bottom, rgba(198, 39, 238, 0.67), rgba(123, 104, 238, 0.67)), url(../img/header-background-img-1200.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(198, 39, 238, 0.67), rgba(123, 104, 238, 0.67)), url(../img/header-background-img-2000.jpg);
+  }
 }
 @media (max-width: 37.5em) {
   .header {
@@ -1127,13 +1135,18 @@ S .card__side--front {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(198, 39, 238, 0.8), rgba(123, 104, 238, 0.8)), url(../img/features-background-img.jpg);
+  background-image: linear-gradient(to right bottom, rgba(198, 39, 238, 0.8), rgba(123, 104, 238, 0.8)), url(../img/features-background-img-1200.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
 }
 .section-features > * {
   transform: skewY(7deg);
+}
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .section-features {
+    background-image: linear-gradient(to right bottom, rgba(198, 39, 238, 0.8), rgba(123, 104, 238, 0.8)), url(../img/features-background-img-2000.jpg);
+  }
 }
 @media (max-width: 56.25em) {
   .section-features {
@@ -1173,7 +1186,7 @@ S .card__side--front {
 }
 
 .book {
-  background-image: linear-gradient(102deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../img/book-background-img.jpg);
+  background-image: linear-gradient(102deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../img/book-background-img-1200.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
@@ -1188,6 +1201,11 @@ S .card__side--front {
   .book {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/book-background-img.jpg);
     background-size: cover;
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .book {
+    background-image: linear-gradient(102deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../img/book-background-img-2000.jpg);
   }
 }
 .book__form {
