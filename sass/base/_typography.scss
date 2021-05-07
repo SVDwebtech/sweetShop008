@@ -15,6 +15,8 @@ body {
 
 	&--main {
 		display: block;
+		width: max-content;
+		margin: 0 auto;
 		font-size: 4.75rem;
 		font-weight: 400;
 		letter-spacing: .8rem;
@@ -34,13 +36,14 @@ body {
 		}
 
 		@include respond(phone) {
-			letter-spacing: .2rem;
-			font-size: 2.5rem;
+			letter-spacing: .1rem;
+			font-size: 2rem;
 		}
 	}
 
 	&--sub {
 		display: block;
+		width: max-content;
 		font-size: 1.5rem;
 		font-weight: 900;
 		letter-spacing: .5rem;
@@ -77,9 +80,26 @@ body {
 		$color-primary-dark
 	);
 	-webkit-background-clip: text;
+	background-clip: text;
 	color: transparent;
 	letter-spacing: .2rem;
 	transition: all .2s;
+	&--white {
+		color: $color-white;
+		font-size: 3.5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		display: inline-block;
+		transition: all .2s;
+		@include respond(tab-port) {
+			letter-spacing: .15rem;
+			font-size: 3rem;
+		}
+		@include respond(phone) {
+			letter-spacing: 0rem;
+			font-size: 2rem;
+		}
+	}
 	@include respond(tab-port) {
 		letter-spacing: .15rem;
 		font-size: 3rem;
@@ -92,11 +112,18 @@ body {
 		transform: skewX(15deg) skewY(.2deg) scale(1.1);
 		text-shadow: .5rem 1rem 2rem rgba($color-black, .5);
 	}
+	&--white:hover {
+		transform: skewX(15deg) skewY(.2deg) scale(1.1);
+		text-shadow: .5rem 1rem 2rem rgba($color-black, .5);
+	}
 }
 .heading-tertiary {
 	font-size: $default-font-size;
 	font-weight: 700;
 	text-transform: uppercase;
+	@include respond(phone) {
+		font-size: 1.4rem;
+	}
 }
 .paragraph {
 	font-size: $default-font-size;

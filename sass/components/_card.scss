@@ -3,10 +3,10 @@
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
-	height: 52rem;
+	height: 48rem;
 
 	&__side {
-		height: 52rem;
+		height: 48rem;
 		transition: all .8s ease;
 		position: absolute;
 		top: 0;
@@ -129,12 +129,12 @@
 		padding: 3rem;
 		ul {
 			list-style: none;
-			width: 80%;
+			width: 90%;
 			margin: 0 auto;
 			li {
 				text-align: center;
-				font-size: 1.5rem;
-				padding: 1rem;
+				font-size: 1.15rem;
+				padding: 1rem .5rem;
 				&:not(:last-child) {
 					border-bottom: 1px solid $color-grey-light-2;
 				}
